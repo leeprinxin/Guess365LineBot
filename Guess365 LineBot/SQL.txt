@@ -1,0 +1,69 @@
+CREATE TABLE LineUserMember(
+LineUniqueID nvarchar(128) PRIMARY KEY,
+Level integer,
+UserId nvarchar(128) REFERENCES UserMember (UserId)
+)
+
+CREATE TABLE LineBotAutoPrediction(
+id INT IDENTITY PRIMARY KEY,
+SubscribeLevel nvarchar(50),
+SubscribeStart_dd datetime,
+SubscribeEnd_dd datetime,
+isPayment nvarchar(50),
+Payment_dd datetime,
+UesrId nvarchar(128) REFERENCES UserMember (UserId) 
+)
+
+CREATE TABLE LineBotPushMessage(
+id INT IDENTITY PRIMARY KEY,
+Content nvarchar(500),
+type nvarchar(50),
+target_users nvarchar(50),
+from_account nvarchar(50),
+dd datetime)
+
+CREATE TABLE LineUserMemberReplyMessage(
+id INT IDENTITY PRIMARY KEY,
+Content nvarchar(500),
+dd datetime,
+LineUniqueID  nvarchar(128) REFERENCES LineUserMember (LineUniqueID)
+)
+
+
+
+CREATE TABLE LinePlayerPK(
+id INT IDENTITY PRIMARY KEY,
+UserId1  nvarchar(128) REFERENCES UserMember (UserId),
+UserId2  nvarchar(128),
+EventCode varchar(150) REFERENCES MatchEntry (EventCode),
+Option1 nvarchar(128),
+Option2 nvarchar(128),
+GroupOptionCode nvarchar(128),
+isAutoMatch bit DEFAULT 0,
+isPushed bit DEFAULT 0,
+Result nvarchar(128),
+created_dd datetime,
+Match_dd datetime,
+HomeOdds nvarchar(128),
+AwayOdds nvarchar(128),
+SpecialBetValue nvarchar(128),
+GplusPoint real DEFAULT 100,
+GPlus real,
+CONSTRAINT lineun1 UNIQUE(UserId1,EventCode,GroupOptionCode)
+)
+
+CREATE TABLE LinePKQuotations(
+id INT IDENTITY PRIMARY KEY,
+Quotation nvarchar(500) NOT NULL
+)
+
+
+
+**
+CREATE TABLE UserMemberGPlus(
+id INT IDENTITY PRIMARY KEY,
+UserId  nvarchar(128) REFERENCES UserMember (UserId),
+GPlues Real,
+PK_id int,
+dd datetime
+)**
