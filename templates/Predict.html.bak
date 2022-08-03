@@ -1,0 +1,139 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Guess365預測戰績推播</title>
+
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='iconselect.css')}}" >
+	
+	<script type="text/javascript" src="{{url_for('static',filename='iconselect.js')}}"></script>
+	
+	<script type="text/javascript" src="{{url_for('static',filename='iscroll.js')}}"></script>
+	
+	<script>
+
+		
+	var iconSelect;
+	var selectedText;
+	
+	window.onload = function(){
+	
+
+		selectedText = document.getElementById('selected-text');
+		
+		document.getElementById('my-icon-select').addEventListener('changed', function(e){
+		   selectedText.value = iconSelect.getSelectedValue();
+		});
+		
+		iconSelect = new IconSelect("my-icon-select", 
+			{'selectedIconWidth':48,
+			'selectedIconHeight':48,
+			'selectedBoxPadding':5,
+			'iconsWidth':48,
+			'iconsHeight':48,
+			'boxIconSpace':3,
+			'vectoralIconNumber':3,
+			'horizontalIconNumber':1});
+			
+		var icons = [];
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/1.jpg')}}', 'iconValue':'1'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/2.jpg')}}', 'iconValue':'2'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/3.jpg')}}', 'iconValue':'3'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/4.jpg')}}', 'iconValue':'4'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/5.jpg')}}', 'iconValue':'5'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/6.jpg')}}', 'iconValue':'6'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/7.jpg')}}', 'iconValue':'7'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/8.jpg')}}', 'iconValue':'8'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/9.jpg')}}', 'iconValue':'9'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='sticker/10.jpg')}}', 'iconValue':'10'});
+		icons.push({'iconFilePath':'{{url_for('static',filename='no-icon.png')}}', 'iconValue':'-1'});
+		iconSelect.refresh(icons);
+		
+
+
+	};
+		
+	</script>
+
+</head>
+<body>
+    <form method='post' action=''>
+
+<table style="width: 60%; border-collapse: collapse; border-style: none; margin: 20px auto 50px auto;">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: left;">
+<h1 style="text-align: right;"><span style="color: #0000ff;"><strong>Guess365訊息推播</strong></span></h1>
+</td>
+<td style="width: 50%; text-align: left;"><img src="https://github.com/leeprinxin/image/blob/main/%E8%B2%BC%E5%9C%96%E5%8C%85%20%E5%85%B110%E5%BC%B5/%E5%8A%A0%E6%B2%B9%20%E8%A6%81%E6%8B%9A%E6%89%8D%E6%9C%83%E8%B4%8F/%E6%8F%92%E5%9C%9604%20(%E8%B2%BC%E5%9C%96).jpg?raw=true" alt="" width="200" height="133" /></td>
+</tr>
+</tbody>
+</table>
+<table style="height: 55px; width: 80%; border-collapse: collapse; border-style: double; background-color: #ccccff; border-color: #471362; margin: 10px auto 20px auto;" border="5">
+<tbody>
+<tr style="height: 19px;">
+<td style="width: 20%; height: 19px; text-align: center;"><span style="color: #0000ff;"><strong><label>傳送對象</label></strong></span></td>
+<td style="width: 80%; height: 19px; text-align: center;">
+<select name="user_select">
+<option>所有人</option>
+<option>Level-1用戶</option>
+{% for person in LineUserMembers %}
+<option>{{person}}</option>
+{% endfor %}
+</select></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 20%; height: 18px; text-align: center;"><span style="color: #0000ff;"><strong><label>選擇貼圖</label></strong></span></td>
+<td style="width: 80%; height: 18px; text-align: left;">
+
+
+<div id="my-icon-select" name="xin"></div>
+<input type="text" id="selected-text" name="selected-text" style="width:65px;" readonly="readonly"> </input>
+
+</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 20%; height: 18px; text-align: center;"><span style="color: #0000ff;"><strong><label>傳輸內容</label></strong></span></td>
+<td style="width: 80%; height: 18px; text-align: center;"><textarea style="width: 80%; height: 250px;" cols="40" name="content" rows="6"></textarea></td>
+</tr>
+
+<tr style="height: 18px;">
+<td style="width: 20%; height: 18px; text-align: center;"><span style="color: #0000ff;"><strong><label>預測戰績</label></strong></span></td>
+<td style="width: 80%; height: 18px; text-align: center;"><textarea style="width: 80%; height: 250px;" cols="40" name="predict_content" rows="6" readonly>
+{{PredictResults}}
+</textarea></td>
+</tr>
+
+<tr>
+<td style="text-align: center;" colspan="2">
+<button>推送</button>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%; border-collapse: collapse; margin-top: 20px; margin-bottom: 10px; margin-left: 0px; border-style: none; position: width: 100%;
+position: absolute;
+bottom: 0">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #ccccff; text-align: center;"><strong>@ 2021 Guess365, Ltd.</strong></td>
+</tr>
+</tbody>
+</table>
+
+<input name="parameter" type='text'  value=
+	'?member={{accounts}}{% if DateBetween!=None%}&DateBetween={{DateBetween}}{% endif %}'>
+</input>
+
+	</form>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <script>
+      var messages = {{ messages | safe }};
+      for (var i=0; i<messages.length; i++) {
+        alert(messages[i]);
+      }
+    </script>
+  {% endif %}
+{% endwith %}
+</body>
+</html>

@@ -1,0 +1,338 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://i.imgur.com/QkEcHk3.png",
+    "aspectRatio": "4:1.8",
+    "size": "full",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "15px",
+                "text": "開賽時間 : 05-17 08:20 ",
+                "align": "center",
+                "color": "#000000"
+              }
+            ],
+            "backgroundColor": "#33DAFF"
+          }
+        ],
+        "height": "30px",
+        "offsetBottom": "20px",
+        "backgroundColor": "#33DAFF",
+        "alignItems": "center"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://i.imgur.com/LuO1SXs.png",
+                "size": "80px",
+                "offsetTop": "5px"
+              }
+            ],
+            "height": "100px",
+            "position": "absolute",
+            "width": "70%",
+            "offsetStart": "9%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "vs",
+                "weight": "bold",
+                "flex": 0,
+                "size": "xxl",
+                "gravity": "center",
+                "align": "center",
+                "offsetTop": "25px",
+                "margin": "5px",
+                "position": "absolute"
+              }
+            ],
+            "height": "100px",
+            "width": "50px",
+            "offsetStart": "45.5%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://i.imgur.com/pp3nO6E.png",
+                "size": "80px",
+                "offsetEnd": "40px",
+                "offsetTop": "5px"
+              }
+            ],
+            "height": "100px",
+            "margin": "40px",
+            "justifyContent": "center",
+            "offsetStart": "62%",
+            "paddingStart": "10px",
+            "width": "150px",
+            "position": "absolute"
+          }
+        ],
+        "offsetBottom": "30px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "辛辛那堤紅人",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "align": "center",
+                "wrap": true
+              }
+            ],
+            "justifyContent": "center",
+            "width": "100%",
+            "position": "absolute",
+            "offsetEnd": "25%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "密爾瓦基釀酒人",
+                "size": "20px",
+                "weight": "bold",
+                "align": "center",
+                "wrap": true
+              }
+            ],
+            "width": "75%",
+            "justifyContent": "center",
+            "position": "absolute",
+            "offsetStart": "38%"
+          }
+        ],
+        "offsetBottom": "45px",
+        "height": "40px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "weight": "bold",
+            "flex": 0,
+            "size": "20px",
+            "gravity": "center",
+            "align": "center",
+            "text": "🏁全場獲勝"
+          }
+        ],
+        "height": "30px",
+        "offsetBottom": "65px",
+        "offsetEnd": "5px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "margin": "20px",
+                "text": "1.5",
+                "align": "center"
+              }
+            ],
+            "height": "50px",
+            "width": "70px",
+            "offsetStart": "5%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "text": "賠率",
+                "wrap": true,
+                "margin": "5px"
+              }
+            ],
+            "height": "50px",
+            "width": "100px",
+            "offsetStart": "18%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "gravity": "center",
+                "align": "center",
+                "margin": "5px",
+                "text": "2.3"
+              }
+            ],
+            "height": "50px",
+            "width": "90px",
+            "offsetStart": "15%"
+          }
+        ],
+        "offsetBottom": "65px",
+        "height": "30px",
+        "margin": "5px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "😁來自koer3741的狠話😁",
+            "wrap": true,
+            "weight": "bold",
+            "align": "center"
+          }
+        ],
+        "alignItems": "center",
+        "justifyContent": "center",
+        "offsetBottom": "65px",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "text": "敵人變成朋友，就比朋友更可靠，朋友變成敵人，比敵人更危險。有些事知道了就好，不必多說。有些人認識了就好，不必深交。s Michael Jordan."
+          }
+        ],
+        "backgroundColor": "#33DAFF",
+        "paddingAll": "md",
+        "offsetBottom": "75px",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "height": "110px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn-icons-png.flaticon.com/512/1378/1378593.png",
+                "size": "40px"
+              }
+            ],
+            "flex": 0,
+            "offsetStart": "4px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "koer3741已經下注給館長，您要挺吳宗憲嗎!?",
+                "wrap": true,
+                "weight": "bold",
+                "align": "center",
+                "size": "20px",
+                "flex": 0
+              }
+            ],
+            "paddingEnd": "5px"
+          }
+        ],
+        "alignItems": "center",
+        "offsetBottom": "80px"
+      }
+    ],
+    "paddingStart": "0px",
+    "paddingEnd": "0px",
+    "flex": 0,
+    "spacing": "lg",
+    "height": "430px"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "data": "hello",
+              "label": "挑戰"
+            },
+            "color": "#EA0000",
+            "style": "link"
+          }
+        ],
+        "width": "190px",
+        "cornerRadius": "xxl"
+      }
+    ],
+    "height": "40px",
+    "justifyContent": "center",
+    "alignItems": "center"
+  }
+}

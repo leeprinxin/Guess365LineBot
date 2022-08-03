@@ -1,0 +1,418 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "size": "100%",
+    "aspectRatio": "5:2",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "https://guess365.cc/guessing/?sports=3"
+    },
+    "url": "https://i.imgur.com/I6FkEpB.jpeg"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "xl",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "15px",
+                "text": "開賽時間 : 05-17 08:20 ",
+                "align": "center",
+                "color": "#ffffff"
+              }
+            ],
+            "backgroundColor": "#2a7bcf"
+          }
+        ],
+        "height": "30px",
+        "offsetBottom": "20px",
+        "backgroundColor": "#2a7bcf",
+        "alignItems": "center"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://i.imgur.com/LuO1SXs.png",
+                "size": "80px",
+                "offsetTop": "5px"
+              }
+            ],
+            "height": "100px",
+            "position": "absolute",
+            "width": "70%",
+            "offsetStart": "9%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "vs",
+                "weight": "bold",
+                "flex": 0,
+                "size": "xxl",
+                "gravity": "center",
+                "align": "center",
+                "offsetTop": "25px",
+                "margin": "5px",
+                "position": "absolute"
+              }
+            ],
+            "height": "100px",
+            "width": "50px",
+            "offsetStart": "45.5%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://i.imgur.com/pp3nO6E.png",
+                "size": "80px",
+                "offsetEnd": "40px",
+                "offsetTop": "5px"
+              }
+            ],
+            "height": "100px",
+            "margin": "40px",
+            "justifyContent": "center",
+            "offsetStart": "62%",
+            "paddingStart": "10px",
+            "width": "150px",
+            "position": "absolute"
+          }
+        ],
+        "height": "90px",
+        "offsetBottom": "30px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "辛辛那堤紅人",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "align": "center",
+                "wrap": true
+              }
+            ],
+            "justifyContent": "center",
+            "width": "100%",
+            "position": "absolute",
+            "offsetEnd": "25%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "密爾瓦基釀酒人",
+                "size": "20px",
+                "weight": "bold",
+                "align": "center",
+                "wrap": true
+              }
+            ],
+            "width": "75%",
+            "justifyContent": "center",
+            "position": "absolute",
+            "offsetStart": "38%"
+          }
+        ],
+        "offsetBottom": "40px",
+        "height": "40px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "weight": "bold",
+            "flex": 0,
+            "size": "20px",
+            "gravity": "center",
+            "align": "center",
+            "text": "㊙️全場獲勝"
+          }
+        ],
+        "height": "30px",
+        "offsetBottom": "60px",
+        "offsetEnd": "12px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "margin": "20px",
+                "text": "1.5",
+                "align": "center"
+              }
+            ],
+            "height": "50px",
+            "width": "70px",
+            "offsetStart": "5%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "text": "賠率",
+                "wrap": true,
+                "margin": "5px"
+              }
+            ],
+            "height": "50px",
+            "width": "100px",
+            "offsetStart": "18%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "gravity": "center",
+                "align": "center",
+                "margin": "5px",
+                "text": "2.3"
+              }
+            ],
+            "height": "50px",
+            "width": "90px",
+            "offsetStart": "15%"
+          }
+        ],
+        "offsetBottom": "60px",
+        "height": "30px",
+        "margin": "5px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "margin": "20px",
+                "text": "40%",
+                "align": "center"
+              }
+            ],
+            "height": "50px",
+            "width": "70px",
+            "offsetStart": "5%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "gravity": "center",
+                "align": "center",
+                "margin": "5px",
+                "text": "獲勝機率",
+                "wrap": true
+              }
+            ],
+            "height": "50px",
+            "width": "100px",
+            "offsetStart": "11%"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "weight": "bold",
+                "flex": 0,
+                "size": "20px",
+                "gravity": "center",
+                "align": "center",
+                "margin": "5px",
+                "text": "60%"
+              }
+            ],
+            "height": "50px",
+            "width": "90px",
+            "offsetStart": "15%"
+          }
+        ],
+        "offsetBottom": "60px",
+        "height": "30px",
+        "margin": "10px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              }
+            ],
+            "width": "40%",
+            "backgroundColor": "#cf1a03",
+            "height": "6px",
+            "paddingStart": "5px",
+            "paddingEnd": "5px"
+          }
+        ],
+        "backgroundColor": "#005ad2",
+        "margin": "sm",
+        "width": "280px",
+        "offsetStart": "2%",
+        "offsetBottom": "60px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "密爾瓦基釀酒人",
+            "weight": "bold",
+            "size": "30px",
+            "wrap": true,
+            "color": "#d9168e",
+            "flex": 0
+          }
+        ],
+        "width": "300px",
+        "justifyContent": "center",
+        "maxHeight": "100px",
+        "height": "100px",
+        "alignItems": "center",
+        "offsetBottom": "85px"
+      }
+    ],
+    "paddingStart": "0px",
+    "paddingEnd": "0px",
+    "height": "370px"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "uri": "https://mobile.guess365.cc/guessing/",
+                  "label": "馬上來預測"
+                },
+                "style": "primary",
+                "color": "#d9168e"
+              }
+            ],
+            "width": "50%"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "好手來PK",
+                  "text": "@我要PK"
+                },
+                "style": "primary",
+                "color": "#d9168e"
+              }
+            ],
+            "width": "50%",
+            "paddingStart": "5px"
+          }
+        ],
+        "height": "60px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "本預測僅供參考，請小心服用",
+            "weight": "bold",
+            "margin": "sm",
+            "align": "center",
+            "size": "xxs",
+            "offsetBottom": "5px"
+          }
+        ]
+      }
+    ],
+    "height": "90px"
+  }
+}

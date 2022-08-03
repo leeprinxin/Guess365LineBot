@@ -1,0 +1,267 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "100%",
+        "aspectRatio": "5:2",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "https://guess365.cc/guessing/?sports=3"
+        },
+        "url": "https://i.imgur.com/I6FkEpB.jpeg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://upload.wikimedia.org/wikipedia/zh/thumb/2/2a/Major_League_Baseball.svg/1200px-Major_League_Baseball.svg.png",
+                "size": "xl",
+                "aspectMode": "fit",
+                "aspectRatio": "5:3",
+                "flex": 0,
+                "align": "center"
+              }
+            ],
+            "height": "80px",
+            "width": "300px",
+            "offsetBottom": "10px"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "MLB準確度:",
+                    "size": "20px",
+                    "weight": "bold"
+                  }
+                ],
+                "flex": 0
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "70%",
+                    "weight": "bold",
+                    "size": "20px",
+                    "color": "#d9168e"
+                  }
+                ],
+                "flex": 0
+              }
+            ],
+            "width": "300px",
+            "offsetBottom": "10px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "width": "70%",
+                "backgroundColor": "#d9168e",
+                "height": "6px"
+              }
+            ],
+            "backgroundColor": "#9FD8E36E",
+            "height": "6px",
+            "margin": "sm",
+            "offsetBottom": "15px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "2021賽季回測",
+                "size": "21px",
+                "align": "center",
+                "weight": "bold"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "累計獲利 : ",
+                        "size": "20px",
+                        "weight": "bold",
+                        "flex": 0
+                      },
+                      {
+                        "type": "text",
+                        "weight": "bold",
+                        "size": "20px",
+                        "color": "#d9168e",
+                        "align": "center",
+                        "flex": 0,
+                        "text": "20,530"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元",
+                        "weight": "bold",
+                        "size": "20px"
+                      }
+                    ],
+                    "width": "300px",
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "spacing": "10px"
+                  }
+                ],
+                "width": "500px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "預測場數 : ",
+                        "size": "20px",
+                        "weight": "bold",
+                        "flex": 0
+                      },
+                      {
+                        "type": "text",
+                        "text": "288過251",
+                        "weight": "bold",
+                        "size": "20px",
+                        "color": "#d9168e",
+                        "align": "center",
+                        "flex": 0
+                      }
+                    ],
+                    "width": "300px",
+                    "spacing": "10px"
+                  }
+                ],
+                "width": "500px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "賽季勝率 : ",
+                        "size": "20px",
+                        "weight": "bold",
+                        "flex": 0
+                      },
+                      {
+                        "type": "text",
+                        "text": "87.2",
+                        "weight": "bold",
+                        "size": "20px",
+                        "color": "#d9168e",
+                        "align": "center",
+                        "flex": 0
+                      },
+                      {
+                        "type": "text",
+                        "text": "%",
+                        "weight": "bold",
+                        "size": "20px",
+                        "flex": 0
+                      }
+                    ],
+                    "width": "300px",
+                    "spacing": "10px"
+                  }
+                ],
+                "width": "500px"
+              }
+            ],
+            "height": "300px",
+            "margin": "15px",
+            "offsetBottom": "20px",
+            "spacing": "3px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://i.imgur.com/jRkJ4nb.png",
+                "size": "full",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://i.imgur.com/dIL8cDr.png"
+                },
+                "align": "center",
+                "gravity": "center",
+                "aspectMode": "fit",
+                "aspectRatio": "6:3.5"
+              }
+            ],
+            "width": "280px",
+            "spacing": "10px",
+            "offsetBottom": "215px"
+          }
+        ],
+        "paddingStart": "2%",
+        "paddingEnd": "2%",
+        "height": "420px",
+        "spacing": "12px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "本預測僅供參考，請小心服用",
+            "weight": "bold",
+            "align": "center",
+            "size": "xxs"
+          }
+        ],
+        "offsetTop": "3px"
+      }
+    }
+
+  ]
+}

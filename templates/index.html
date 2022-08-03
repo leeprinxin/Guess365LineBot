@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>訂閱免費即時看牌</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="row" style="margin: 10px">
+        <div class="col-12" style="margin: 10px">
+			<h1><label id="LineUserId" ></label><br/></h1>
+            <label>帳號</label>
+            <input type="text" id="name" class="form-control" />
+            <br />
+            <label>密碼</label>
+            <input type="text" id="password" class="form-control" />
+            <br />
+            <button class="btn btn-success btn-block" id="sure">登入</button>
+        </div>
+    </div>
+
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+	<script>
+        function initializeLiff(myLiffId) {
+            liff.init({liffId: myLiffId });
+        }
+
+
+	    function setLabelLineUserId(){
+				liff.init({liffId: '{{ liffid }}'})
+				.then(() => {
+					if (!liff.isLoggedIn()) {
+					  liff.login({ redirectUri: location.href })
+					  return
+					}
+					liff.getProfile().then(function (profile) {
+						const displayName = profile.displayName;
+						document.getElementById('LineUserId').innerHTML = 'Hello! '+displayName;
+					}
+					)
+
+		
+				  })
+				.catch((err) => {
+					// Error happens during initialization
+					console.log(err.code, err.message);
+				});
+				
+		}
+		
+		function postData(url, data) {
+            return fetch(url, {
+                body: JSON.stringify(data),
+                headers: {
+					'Authorization': 'Basic '+btoa('{{username}}:{{password}}'), 
+                    'user-agent': 'Mozilla/4.0 MDN Example',
+                    'content-type': 'application/json'
+                },
+                method: 'POST',
+                mode: 'cors',
+            }).then(response => response.json()) // 輸出成 json
+        }
+		
+
+		function pushMsg(pname, password) {
+			if (pname == '' || password == '') {  //資料檢查
+				alert('尚未填寫完整資料');
+				return;
+			}
+			var msg = "###";  //回傳訊息字串
+			msg = msg + pname + "/";
+			msg = msg + password+ "/";
+			
+			liff.getProfile()
+			    .then((profile) => {
+				const newLineUniqueID = profile.userId;
+				msg = msg + newLineUniqueID;
+			    })
+				.then(() => {
+					  postData('https://{{domain_name}}/login', { text: msg })
+					  .then(data => {
+					  if (data['response'] == 'error_1'){
+						alert('您已登入會員');
+						liff.closeWindow();
+						return;
+					  } else if (data['response'] == 'error_2') {
+						alert('網站會員已經綁定到其他Line');
+						return;
+					  } else if (data['response'] == 'error_3') {
+						alert('登入失敗，密碼不存在');
+						return;
+					  } else if (data['response'] == 'error_4') {
+						alert('伺服器錯誤，請稍後再試');
+						return;
+					  } else {
+						alert('成功登入');
+						liff.closeWindow();
+						return;
+					  }
+					})
+				})
+
+
+		}
+		
+		setLabelLineUserId();
+		$(document).ready(function () {		
+			initializeLiff('{{ liffid }}');  //接收傳遞的 liffid 參數
+			$('#sure').click(function (e) {  //按下確定鈕
+				pushMsg($('#name').val(), $('#password').val());
+			});
+		});
+
+	</script>
+</body>
+</html>
